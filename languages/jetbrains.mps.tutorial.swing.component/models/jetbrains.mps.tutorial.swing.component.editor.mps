@@ -9,6 +9,7 @@
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="4bp1" ref="r:d5b28e0f-9948-4218-964f-1fbdcc09049f(jetbrains.mps.tutorial.swing.component.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -102,12 +103,8 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -215,7 +212,7 @@
                 <node concept="10Nm6u" id="12rhGe7wSIu" role="33vP2m" />
               </node>
             </node>
-            <node concept="3clFbF" id="12rhGe7wFtP" role="3cqZAp">
+            <node concept="3clFbF" id="12rhGe7z9Zs" role="3cqZAp">
               <node concept="2OqwBi" id="12rhGe7wJXG" role="3clFbG">
                 <node concept="2OqwBi" id="12rhGe7wJrx" role="2Oq$k0">
                   <node concept="2OqwBi" id="12rhGe7wIFF" role="2Oq$k0">
@@ -258,7 +255,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="12rhGe7wNif" role="3cqZAp" />
             <node concept="3cpWs8" id="12rhGe7x4eU" role="3cqZAp">
               <node concept="3cpWsn" id="12rhGe7x4eV" role="3cpWs9">
                 <property role="TrG5h" value="button" />
@@ -276,36 +272,9 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="12rhGe7xfRv" role="3cqZAp">
-              <node concept="3cpWsn" id="12rhGe7xfRw" role="3cpWs9">
-                <property role="TrG5h" value="panel" />
-                <node concept="3uibUv" id="12rhGe7xfNX" role="1tU5fm">
-                  <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
-                </node>
-                <node concept="2ShNRf" id="12rhGe7xfRx" role="33vP2m">
-                  <node concept="1pGfFk" id="12rhGe7xfRy" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="12rhGe7x8Ma" role="3cqZAp">
-              <node concept="2OqwBi" id="12rhGe7xhhy" role="3clFbG">
-                <node concept="37vLTw" id="12rhGe7xfRz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="12rhGe7xfRw" resolve="panel" />
-                </node>
-                <node concept="liA8E" id="12rhGe7xkyx" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
-                  <node concept="37vLTw" id="12rhGe7xkAC" role="37wK5m">
-                    <ref role="3cqZAo" node="12rhGe7x4eV" resolve="button" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="12rhGe7xl6J" role="3cqZAp">
-              <node concept="37vLTw" id="12rhGe7xlpI" role="3cqZAk">
-                <ref role="3cqZAo" node="12rhGe7xfRw" resolve="panel" />
+            <node concept="3clFbF" id="12rhGe7__JE" role="3cqZAp">
+              <node concept="37vLTw" id="12rhGe7__JC" role="3clFbG">
+                <ref role="3cqZAo" node="12rhGe7x4eV" resolve="button" />
               </node>
             </node>
           </node>
