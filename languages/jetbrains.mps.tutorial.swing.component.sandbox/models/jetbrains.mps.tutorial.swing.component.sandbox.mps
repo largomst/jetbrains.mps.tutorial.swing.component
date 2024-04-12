@@ -11,7 +11,8 @@
         <child id="5699690863926209922" name="records" index="QLjcA" />
       </concept>
       <concept id="5699690863926209913" name="jetbrains.mps.tutorial.swing.component.structure.Record" flags="ng" index="QLjft">
-        <property id="5699690863926665761" name="value" index="QYzM5" />
+        <property id="5699690863926665761" name="str" index="QYzM5" />
+        <property id="6706142654205071967" name="toggle" index="31V1dD" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -29,10 +30,12 @@
     <node concept="QLjft" id="4WpnEhTRlrW" role="QLjcA">
       <property role="TrG5h" value="Second" />
       <property role="QYzM5" value="2" />
+      <property role="31V1dD" value="true" />
     </node>
     <node concept="QLjft" id="4WpnEhTRlrZ" role="QLjcA">
       <property role="TrG5h" value="Third" />
-      <property role="QYzM5" value="3" />
+      <property role="QYzM5" value="good" />
+      <property role="31V1dD" value="true" />
     </node>
   </node>
 </model>

@@ -70,8 +70,13 @@
     </node>
     <node concept="1TJgyi" id="4WpnEhTSQ8x" role="1TKVEl">
       <property role="IQ2nx" value="5699690863926665761" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="str" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5Oh0jqsZh9v" role="1TKVEl">
+      <property role="IQ2nx" value="6706142654205071967" />
+      <property role="TrG5h" value="toggle" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
